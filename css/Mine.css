@@ -3,7 +3,7 @@
     margin-top: 50px;
     width: 30%;
     height: 700px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.767);
     margin-left: 65%;
     border-radius: 30px;
     margin-bottom: 50px;
@@ -35,17 +35,7 @@
     height: 60px;
     
 }
-input.button-add {
-    background-image: url(../images/login/google.png); /* 16px x 16px */
-    background-color: transparent; /* make the button transparent */
-    background-repeat: no-repeat;  /* make the background image appear only once */
-    background-position: 0px 0px;  /* equivalent to 'top left' */
-    border: none;           /* assuming we don't want any borders */
-    cursor: pointer;        /* make the cursor like hovering over an <a> element */
-    height: 16px;           /* make this the size of your image */
-    padding-left: 16px;     /* make text start to the right of the image */
-    vertical-align: middle; /* align the text vertically centered */
-  }
+/*  */
 .subtombol{
 height: 200px;
 /* width: 200px; */
@@ -56,13 +46,66 @@ height: 200px;
 .m50{
     margin-top: 15px;
 }
-.google{
-    background-image: url('../images/login/google.png');
-    background-size: cover;
+
+.google-btn {
+  /* width: 300px; */
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 4px 3px 4px 3px rgba(255, 255, 255, 0.25);
+margin: 20px 0px;
+}
+.google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
     width: 40px;
     height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .google-icon {
+    /* position: absolute; */
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 20px;
+    height: 20px;
+  }
+  .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+    /* text-align: center; */
+  }
+  .fb-btn {
+    /* width: 300px; */
+    height: 42px;
+    background-color: #004cc5;
+    border-radius: 2px;
+    box-shadow: 4px 3px 4px 3px rgba(255, 255, 255, 0.25);
+  margin: 20px 0px;
+  }
+  .fb-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .fb-icon {
+    /* position: absolute; */
+    /* margin-top: 11px;
+    margin-left: 11px; */
+    width: 40px;
+    height: 40px;
+  }
 
-}
+
 .fb{
     background-image: url('../images/login/fb.png');
     background-size: cover;
@@ -70,9 +113,7 @@ height: 200px;
     height: 40px;
     color: rgba(255, 255, 255, 0);
 }
-.button.p.fb-text{
-    margin-top: 0;
-}
+
 .signup{
     padding-top: 50px;
 }
