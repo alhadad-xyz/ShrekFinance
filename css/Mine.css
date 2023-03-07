@@ -2,10 +2,20 @@
 .box1{
     margin-top: 50px;
     width: 30%;
-    height: 800px;
+    height: 700px;
     background-color: rgba(255, 255, 255, 1);
     margin-left: 65%;
     border-radius: 30px;
+    margin-bottom: 50px;
+}
+.box2{
+    margin-top: 50px;
+    width: 30%;
+    height: 900px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-left: 35%;
+    border-radius: 30px;
+    margin-bottom: 50px;
 }
 .atas{
     padding-top: 30px;
@@ -13,18 +23,32 @@
 .email{
     color: black;
     padding-top: 100px;
+    padding-bottom: -20px;
 
 }
 .forgot{
     margin-top: -15px;
+    margin-right: 20px;
 }
 .tombol{
         width: 100%;
     height: 60px;
     
 }
+input.button-add {
+    background-image: url(../images/login/google.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 16px;           /* make this the size of your image */
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+  }
 .subtombol{
-
+height: 200px;
+/* width: 200px; */
 }
 .with{
     padding-top: -30px;
