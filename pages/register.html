@@ -8,51 +8,59 @@
     <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="../css/Mine.css">
     <script src="../js/materialize.min.js"></script>
+    <script src="../js/mine.js"></script>
 </head>
 <body background="../images/login/bglogin.jpg" style="background-size: cover;">
   <div class="box2">
         <div class="row">
         <div class="center atas">
-        <h4>SIGN UP</h4>
+        <h5>Create Your Account</h5>
         </div>      
                 <form class="col s12">
                   <div class="row">
                     <div class="input-field col s12">
-                        <input id="username" type="text" class="validate">
-                        <label for="username">Username</label>
+                        <input id="username" type="text" class="validate isian" required minlength="5">
+                        <label for="username"> <h6 class="isian">Username</h6></label>
+                        <span class="helper-text" data-error="Minimum 5 character !"></span>
                       </div>
                     <div class="input-field col s12">
-                      <input id="email" type="email" class="validate" style="color: rgb(0, 0, 0);">
-                      <label for="email">Email</label>
-                      <!-- <span class="helper-text" data-error="Please Input Email With @" data-success="right"></span> -->
-                      
+                      <input id="email" type="email" class="validate isian" style="color: rgb(0, 0, 0);" required>
+                      <label for="email"><h6 class="isian">Email</h6></label>
+                      <span class="helper-text" data-error="please input with correctly !" ></span>
                     </div>
                     <div class="input-field col s12">
-                      <input id="password" type="password" class="validate" >
+                    <!-- <input id="pass"name="pass" type="password" required class="validate"> -->
+                      <input id="pass" type="password" name="pass"required minlength="10" class="validate">
                       <label for="password">Password</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Confimation Password</label>
-                      </div>
-                    </div>
-                  <div class="center">
+                      <span class="helper-text" data-error="Please input minium 10 character !"></span>
+                  </div>
+                  <div class="input-field col s12">
+                    <!-- <input id="confirm_pass" type="password" name="confirm_pass" required onkeyup="validate_password()" class="validate"> -->
+                    <input id="confirm_pass" type="password" name="confirm_pass" required onkeyup="validate_password()">
+                      <label id="PasswordConfirm" for="passwordConfirm" data-error="Password not match" data-success="Password Match">Confirm Password</label>
+                      <span class="helper-text" data-error="Password not match !" id="wrong_pass_alert" data-success="Password Match"></span>
+        <!-- <span id="wrong_pass_alert"></span> -->
+
+                  </div>
+                  </div>
+                  
+                <div class="center">
                   <button class="btn waves-effect waves-light tombol" type="submit" name="action">
-                    <h6>
+                    <p>
                       Create Account
-                    </h6>
+                    </p>
                   </button>
                 </div>
                 </form>
               </div>
               <p></p>
-              <h6 class="center">Or</h6>
+              <h6 class="center isian">Or</h6>
               <div class="row">
                 <div class="col s6">
                     <a href="#">
               <div class="google-btn">
                 <div class="google-icon-wrapper">
-                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                  <img class="google-icon" src="../images/login/google.png"/>
                 </div>
                 <p class="btn-text "><b>Sign in with google</b></p>
               </div>
@@ -70,11 +78,10 @@
                 </div>
               </div>
               <div class="center signup">
-                Do You Have Account? <a href="login.html"> Sign In</a>
+                Do You Have an Account? <a href="login.html"> Sign In</a>
               </div>
 
-        <!-- </h1> -->
 
     </div>
-</body>
+    </body>
 </html>

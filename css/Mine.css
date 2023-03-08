@@ -1,21 +1,21 @@
 /* 3 */
 .box1{
-    margin-top: 50px;
+    margin: 20px 0px;
     width: 30%;
-    height: 700px;
-    background-color: rgba(255, 255, 255, 0.767);
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.952);
     margin-left: 65%;
-    border-radius: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+    border-radius: 15px;
 }
 .box2{
-    margin-top: 50px;
+    margin: 3% 0px;
     width: 30%;
-    height: 900px;
+    height: 800px;
     background-color: rgba(255, 255, 255, 1);
     margin-left: 35%;
-    border-radius: 30px;
-    margin-bottom: 50px;
+    border-radius: 15px;
+    
 }
 .atas{
     padding-top: 30px;
@@ -27,13 +27,13 @@
 
 }
 .forgot{
-    margin-top: -15px;
+    margin-top: -30px;
     margin-right: 20px;
+    font-size: 12px;
 }
 .tombol{
-        width: 100%;
+    width: 80%;
     height: 60px;
-    
 }
 /*  */
 .subtombol{
@@ -51,7 +51,7 @@ height: 200px;
   /* width: 300px; */
   height: 42px;
   background-color: #4285f4;
-  border-radius: 2px;
+  border-radius: 5px;
   box-shadow: 4px 3px 4px 3px rgba(255, 255, 255, 0.25);
 margin: 20px 0px;
 }
@@ -72,19 +72,20 @@ margin: 20px 0px;
     height: 20px;
   }
   .btn-text {
-    float: right;
+    float: left;
     margin: 11px 11px 0 0;
     color: #fff;
-    font-size: 11px;
+    font-size:12px;
     letter-spacing: 0.2px;
     font-family: "Roboto";
-    /* text-align: center; */
+    padding-left: 47px;
+    
   }
   .fb-btn {
     /* width: 300px; */
     height: 42px;
     background-color: #004cc5;
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: 4px 3px 4px 3px rgba(255, 255, 255, 0.25);
   margin: 20px 0px;
   }
@@ -98,9 +99,6 @@ margin: 20px 0px;
     background-color: #fff;
   }
   .fb-icon {
-    /* position: absolute; */
-    /* margin-top: 11px;
-    margin-left: 11px; */
     width: 40px;
     height: 40px;
   }
@@ -115,5 +113,48 @@ margin: 20px 0px;
 }
 
 .signup{
-    padding-top: 50px;
+    padding: 5px;
+    font-size: 11px;
+    
+}
+.isian{
+    font-size: 12px;
+}
+
+
+.main {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(34, 34, 34);
+  height: 400px;
+  width: 300px;
+  margin-top: 15%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgb(0, 0, 0);
+}
+
+.pass {
+  display: flex;
+  flex-direction: column;
+}
+
+.image h2 {
+  color: rgb(2, 149, 27);
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+.username input,
+.pass input {
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  outline: none;
 }
